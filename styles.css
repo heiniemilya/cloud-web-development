@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .container {
@@ -109,11 +109,12 @@ h1 {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.6rem; 
+        font-size: 1.5rem; 
+        margin-bottom: 1rem;
     }
 
     .bubble {
-        font-size: 3.5rem;  
+        font-size: 3.3rem;  
     }
 
     .subtitle {
