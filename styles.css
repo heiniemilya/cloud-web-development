@@ -102,6 +102,32 @@ h1 {
     box-shadow: 0 8px 10px rgba(225, 200, 238, 0.3);
 }
 
+.card-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    color: #5a4e7c;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #5a4e7c;
+    text-align: left;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b3b5c;
+    margin-bottom: 2rem;
+    text-align: left;
+    hyphens: auto;
+}
+
+.card.more-padding {
+    padding:  40px 25px;
+}
+
 @keyframes gradientMove {
     0% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
