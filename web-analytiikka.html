@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilvipalvelut web-kehityksessä</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1><span class="bubble">Pilvi- <br> palvelut </span> web-kehityksessä</h1>
+
+    <main class="card more-padding">
+        <h2 class="card-title">Web-analytiikka</h2>
+        <p class="card-text">
+           Web-analytiikkaa, kuten tehtävässä käytettävää <i>Cloudflaren Web Analyticsia</i>, voidaan hyödyntää sovelluksen laadun 
+           ja käyttökokemuksen parantamiseen sekä markkinoinnin kohdentamiseen. Web-analytiikka kerää tietoa siitä, miten käyttäjät 
+           vuorovaikuttavat verkkosovelluksen kanssa, kuten millä sivuston sivuilla he vierailevat, kuinka kauan he viipyvät ja 
+           mistä he tulevat.
+           <br><br>
+           Kerätyn datan avulla sovelluksen kehittäjät voivat seurata sovelluksen teknistä suorituskykyä, kuten latausaikoja ja virheitä, 
+           jotka voivat jäädä huomaamatta paikallisessa testauksessa. Datan perusteella pystytään myös kohdentamaan sovelluksen sisältöä 
+           eri käyttäjäryhmille. Esimerkiksi <i>Salaiset kansiot</i> -sovelluksen kieli voitaisiin vaihtaa automaattisesti käyttäjän sijainnin mukaan. 
+           <i>Todisteiden analysointi </i>-pelissä seurantaa voitaisiin käyttää vaikka seuraamaan, kuinka moni käyttäjä aloittaa pelaamaan peliä ja 
+           kuinka moni pelaa pelin loppuun.
+        </p>
+        <h3 class="card-subtitle">Tietoturva ja CORS-ongelmien hallinta</h3>
+        <p class="card-text">
+           Analytiikkaa ja ulkoisia rajapintoja käytettäessä törmätään usein CORS-ilmiöön (Cross-Origin Resource Sharing). 
+           Se on selaimen tietoturvamekanismi, jonka tehtävänä on säädellä, saako verkkosivu hakea dataa toisesta alkuperästä eli originista. 
+           Ilman tätä rajoitetta haitallinen sivusto voisi vapaasti lukea käyttäjän selaintietoja, varastaa istuntoja tai tehdä luvattomia 
+           pyyntöjä käyttäjän puolesta.
+           <br><br>
+           Kun sovellus tekee JavaScript-pyynnön, selain tarkistaa palvelimen vastauksesta Access-Control-Allow-Origin -otsikon. Jos arvo 
+           täsmää sivuston osoitteeseen, pyyntö sallitaan. CORS-ongelmat vältetään tyypillisesti konfiguroimalla palvelin sallimaan nimenomaan 
+           sovelluksen oma osoite tai käyttämällä välityspalvelinta (proxy), jolloin pyyntö näyttää selaimen silmissä lähtevän samasta 
+           alkuperästä. Myös Cloudflaren kaltaiset valmiit kirjastot on suunniteltu välttämään nämä ongelmat lataamalla skriptit asynkronisesti.
+        </p>
+        <div class="back-btn">
+            <a href="../index.html" class="task-link">Takaisin</a>
+        </div>
+    </main>
+</div>
+</body>
+</html>
